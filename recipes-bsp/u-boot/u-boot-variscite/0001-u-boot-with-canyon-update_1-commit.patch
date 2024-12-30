@@ -1,0 +1,22 @@
+From d8d588530680a501c5de709bc824c35823adfb1d Mon Sep 17 00:00:00 2001
+From: Oleh Panasiuk <oleh.panasiuk@proton.me>
+Date: Mon, 30 Dec 2024 15:07:16 +0000
+Subject: [PATCH] u-boot with canyon update_1 commit
+
+---
+ include/configs/canyon_mx8mp.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/configs/canyon_mx8mp.h b/include/configs/canyon_mx8mp.h
+index 1ca1c2ceef1..7a4b260c17d 100644
+--- a/include/configs/canyon_mx8mp.h
++++ b/include/configs/canyon_mx8mp.h
+@@ -67,7 +67,7 @@
+ 	"fdt_high=0xffffffffffffffff\0"		\
+ 	"boot_fdt=try\0" \
+ 	"boot_fit=no\0" \
+-	"fdt_file=undefined\0" \
++	"fdt_file=canyon-mx8mp.dtb\0" \
+ 	"bootm_size=0x10000000\0" \
+ 	"ip_dyn=yes\0" \
+ 	"mmcdev="__stringify(CONFIG_SYS_MMC_ENV_DEV)"\0" \
