@@ -1,41 +1,19 @@
-This README file contains information on the contents of the meta-canyon layer.
+Copyright 2024 Canyon Development
 
-Please see the corresponding sections below for details.
+Yocto meta-layer to satisfy requirements of Canyon Development Yocto Linux Task2:
+- create custom firmware image for the device based on the VAR-SOM-MX8M-PLUS Evaluation Kit
 
-Dependencies
-============
+Final image will be built for "Canyon Test2 device board based on Variscite DART-MX8M-PLUS SoM":
+- machine: canyon-mx8mp
+- distro: fsl-imx-xwayland
+- image: canyon-fw-image
 
-  URI: <first dependency>
-  branch: <branch name>
+and has to be based on:
+- machine: imx8mp-var-dart
+- distro: fsl-imx-xwayland
+- image: fsl-image-gui
 
-  URI: <second dependency>
-  branch: <branch name>
+For repo initialization please use:
+repo init -u https://github.com/3sSystems/meta-canyon -b master -m imx-6.6.23-2.0.0.xml
+repo sync -j$(nproc)
 
-  .
-  .
-  .
-
-Patches
-=======
-
-Please submit any patches against the meta-canyon layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
-
-Table of Contents
-=================
-
-  I. Adding the meta-canyon layer to your build
- II. Misc
-
-
-I. Adding the meta-canyon layer to your build
-=================================================
-
-Run 'bitbake-layers add-layer meta-canyon'
-
-II. Misc
-========
-
---- replace with specific information about the meta-canyon layer ---
